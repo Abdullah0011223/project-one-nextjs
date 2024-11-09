@@ -26,7 +26,8 @@ const Portfolio: React.FC = () => {
 
   return (
     <section className="portfolio-container">
-      <h2 className="portfolio-title">My Projects</h2>
+      <h2 className="portfolio-title">My Projdsaects Pordsa das astfolio</h2>
+      <h2>dsadasdas sad sad saddsa dsadsads dasdsadas adsdasdsa sadasasa</h2>
       <div className="portfolio-gallery">
         {projects.map((project) => (
           <div key={project.id} className="portfolio-item">
