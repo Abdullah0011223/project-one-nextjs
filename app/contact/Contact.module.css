@@ -1,0 +1,58 @@
+/* Contact.module.css */
+
+/* Container for the contact section */
+.contact-container {
+    background-color: #f7fafc;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .contact-title {
+    font-size: 2.5rem;
+    color: #2b2d42;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .input-field:focus {
+    border-color: #4f46e5;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .button {
+    padding: 12px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #3b36e0;
+  }
+  

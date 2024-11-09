@@ -1,0 +1,143 @@
+/* navbar.css */
+
+/* General Styles for Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .navbar-item {
+    position: relative;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #007bff;
+  }
+  
+  .navbar-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Hamburger Icon for Mobile */
+  .navbar-hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Menu Styles */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-item {
+      text-align: center;
+    }
+  
+    .navbar-hamburger {
+      display: block;
+    }
+  
+    .navbar-hamburger.active .hamburger-icon {
+      background-color: transparent;
+    }
+  
+    .navbar-hamburger.active .hamburger-icon::before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  
+    .navbar-hamburger.active .hamburger-icon::after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  
+    .navbar-hamburger .hamburger-icon::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      top: -8px;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .navbar-hamburger .hamburger-icon::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      top: 8px;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+  }
+  
